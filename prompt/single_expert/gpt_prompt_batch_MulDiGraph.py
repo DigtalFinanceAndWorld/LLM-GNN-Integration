@@ -7,8 +7,8 @@ import pandas as pd
 import tiktoken
 
 from describe_single_node_testing import describe_single_node_test
-from most_representative_sample_selection import generate_representative_details
-from head_recent_sample_selection import generate_train_node_detail, load_graph, load_json
+from prompt.sample_select.representative_sample_selection import generate_representative_details
+from prompt.sample_select.head_recent_sample_selection import generate_train_node_detail, load_graph, load_json
 from openai import OpenAI, APIConnectionError, BadRequestError, RateLimitError
 
 from prompt.single_expert.add_history import add_history
