@@ -1,6 +1,9 @@
-# LLM-GNN: An Integrated Framework for Enhanced Time-Space Modeling and Predictive Decision-Making
+![image](https://github.com/user-attachments/assets/b296fb31-1794-451b-8980-b37d212b5cf3)# LLM-GNN: An Integrated Framework for Enhanced Time-Space Modeling and Predictive Decision-Making
 
 How can Large Language Models (LLMs) be integrated with Graph Neural Networks (GNNs) to enhance the effectiveness of joint time-space (graph) modeling and predictive decision-making? This paper proposes an innovative integrated framework named LLM-GNN, which combines the advantages of LLMs and GNNs to improve the capability of joint modeling in complex scenarios involving temporal evolution and spatial diffusion. As a practical application example, this study implements the integrated framework to tackle the Ethereum phishing fraud detection problem. By leveraging the LLM for deep semantic analysis from a multi-resolution perspective on transaction information and network structure, providing insights distinct from those of GNNs, we capture special structural features and extract potential risk signals. Meanwhile, GNNs concentrate on identifying abnormal patterns within the transaction network structure. Subsequently, these two types of risk signals are organically synthesized to form a comprehensive risk assessment system.
+
+### Dataset Download:
+[https://drive.google.com/drive/folders/18MNqjRBPRJWBX_Met3XW81TlHp47lLv1?usp=sharing](https://drive.google.com/drive/folders/18MNqjRBPRJWBX_Met3XW81TlHp47lLv1?usp=sharing)
 
 ## Our innovations:
 
