@@ -3,8 +3,8 @@
 # nohup ./finetune-gpus.sh >> finetune.log 2>&1 &
 # ./finetune-gpus.sh 2>&1 | tee finetune.log
 dataset_name="MulDiGraph"
-first_partition=2
-end_partition=8
+first_partition=1
+end_partition=15
 multiple=100
 delay=5
 strategy="purest"

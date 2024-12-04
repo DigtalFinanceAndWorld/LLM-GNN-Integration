@@ -4,6 +4,8 @@ from sklearn.metrics import confusion_matrix, precision_score, recall_score, f1_
 import csv
 import os
 
+from plt_show_metric import plt_draw
+
 mean_fpr = np.linspace(0, 1, 100)
 
 
@@ -185,4 +187,5 @@ def evaluation(result_dir, metric, dataset_name, model_name, delay, total_partit
     plt.savefig(plt_png_file, format='png', dpi=300, bbox_inches='tight')
     plt.close()
     print(f"The result CSV file: {result_csv_file}, plt png file: {plt_png_file}")
+    plt_draw(result_dir)
     print("Finished !!!")

@@ -3,8 +3,8 @@ import re
 import orjson
 import os
 from concurrent.futures import ProcessPoolExecutor, as_completed
-from describe_single_node_testing_token_cot import *
-from add_history import add_history
+from prompt.single_expert.add_history import add_history
+from prompt.single_expert.describe_single_node_testing_token_cot import *
 from select_analysis import get_cot_3_analysis
 
 

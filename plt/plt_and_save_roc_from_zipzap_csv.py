@@ -109,7 +109,7 @@ def main():
     # end_time = "2019-01-19"
 
     result_dir = '/home/a/zmb_workspace/product/Phisher_detect/baselines/result/MulDiGraph/delay_5/ZipZap_clean'
-    total_partitions = 18
+    total_partitions = 15
     start_time = "2017-06-24"
     end_time = "2022-02-01"
     plot_and_save_roc(result_dir, model_name, total_partitions, start_time, end_time)

@@ -3,16 +3,14 @@
 # nohup ./finetune.sh >> finetune.log 2>&1 &
 # ./finetune.sh 2>&1 | tee finetune.log
 dataset_name="MulDiGraph"
-first_partition=4
-end_partition=18
-train_first=2
+first_partition=1
+end_partition=15
 multiple=1000
 delay=5
 strategy="purest"
 finetune_dataset_dir="/root/LLaMA-Factory/data/finetune_label_logits_smote"
 test_dir="/root/data/clustered_graphs"
-# pretrain_model_path="/root/autodl-tmp/Meta-Llama-3.1-8B/LLM-Research/Meta-Llama-3___1-8B"
-pretrain_model_path="/root/autodl-tmp/Llama-3.1-8B_MulDiGraph_delay_5_4_SFT"
+pretrain_model_path="/root/autodl-tmp/Meta-Llama-3.1-8B/LLM-Research/Meta-Llama-3___1-8B"
 adapter_output_dir="/root/autodl-tmp/adapter/"
 finetune_output_path=""
 result_dir="/root/result"

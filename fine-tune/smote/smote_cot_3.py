@@ -22,7 +22,7 @@ def parse_label(output):
 
 
 # 设置索引范围并遍历数据集
-for idx in range(2, 9):
+for idx in range(1, 16):
     json_file = f'{origin_path}/MulDiGraph_delay_5_{multiple}_{idx}.json'
     # 读取 JSON 文件
     if not os.path.exists(json_file):

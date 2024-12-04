@@ -4,9 +4,13 @@ import time
 import os
 import pandas as pd
 from prompt.single_expert.describe_single_node_testing import describe_single_node_test
-from prompt.single_expert.most_representative_sample_selection import generate_representative_details
-from prompt.single_expert.head_recent_sample_selection import generate_train_node_detail, load_graph, load_labels
+from prompt.sample_select.representative_sample_selection import generate_representative_details
+from prompt.sample_select.head_recent_sample_selection import generate_train_node_detail, load_graph
 from openai import OpenAI, APIConnectionError, RateLimitError
+
+API1 = ""
+API2 = ""
+API3 = ""
 
 API_ENDPOINT_ca = "https://api.openai-proxy.org/v1"
 API_ENDPOINT_openai = "https://api.openai.com/v1"
@@ -16,10 +20,12 @@ model_gpt3 = "gpt-3.5-turbo"
 model_gpt4 = "gpt-4"
 model_gpt4mini = "gpt-4o-mini"
 model_gpt4_32k = "gpt-4-32k"
-model_gpt4o = "chatgpt-4o-latest"
+
+api_list = [API1, API2, API3]
+current_api_key = API1
 
 
-def gpt_chat(messages, API=API5, model=model_gpt4mini, temperature=0, max_tokens=16384):
+def gpt_chat(messages, API=current_api_key, model=model_gpt4mini, temperature=0, max_tokens=16384):
     client = OpenAI(
         base_url=API_ENDPOINT_openai,
         api_key=API,

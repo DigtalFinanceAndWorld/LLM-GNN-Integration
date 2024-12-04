@@ -14,6 +14,10 @@ from prompt.sample_select.purest_sample_selection import generate_purest_detail
 from openai import OpenAI, APIConnectionError, RateLimitError, BadRequestError
 
 
+API1 = ""
+API2 = ""
+API3 = ""
+
 API_ENDPOINT_ca = "https://api.openai-proxy.org/v1"
 API_ENDPOINT_openai = "https://api.openai.com/v1"
 
@@ -23,8 +27,8 @@ model_gpt4 = "gpt-4"
 model_gpt4mini = "gpt-4o-mini"
 model_gpt4_32k = "gpt-4-32k"
 
-api_list = [API7, API8, API9, API10, API11, API13]
-current_api_key = API13
+api_list = [API1, API2, API3]
+current_api_key = API1
 
 
 def change_api_key():

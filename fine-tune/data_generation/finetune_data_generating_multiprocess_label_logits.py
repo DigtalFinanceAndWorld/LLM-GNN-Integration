@@ -3,8 +3,8 @@ import re
 import orjson
 import os
 from concurrent.futures import ProcessPoolExecutor, as_completed
-from describe_single_node_testing_token_4096 import *
-from add_history import add_history
+from prompt.single_expert.add_history import add_history
+from prompt.single_expert.describe_single_node_testing_token_4096 import *
 
 
 def process_node(node, graph, labels):

@@ -5,9 +5,8 @@ import os
 import torch
 import transformers
 import pandas as pd
-from describe_single_node_testing_token_4096 import describe_single_node_test
-from add_history import *
-from purest_sample_selection import generate_purest_detail
+from prompt.single_expert.add_history import add_history
+from prompt.single_expert.describe_single_node_testing_token_4096 import *
 import argparse
 from torch.multiprocessing import Pool, set_start_method
 

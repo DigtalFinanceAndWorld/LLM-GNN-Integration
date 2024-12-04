@@ -39,7 +39,7 @@ def main():
     metric = {"tpr_all": [], "precision_all": [], "recall_all": [], "f1_all": [], "tpr_at_10_fpr_all": [],
               "auc_all": [], "conf_matrix_all": []}
 
-    for i in range(2, total_partitions + 1):
+    for i in range(1, total_partitions + 1):
         result_llm_1 = pd.read_excel(
             f'../../prompt/result/{finetune}/{finetune_type}/{agent}/{dataset_name}/{multiple1}/delay_{delay}/{strategy}/{str(i)}.xlsx')
         result_llm_2 = pd.read_excel(

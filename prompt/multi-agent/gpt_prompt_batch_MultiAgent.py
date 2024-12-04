@@ -8,12 +8,15 @@ import tiktoken
 
 from prompt.single_expert.add_history import add_history
 from prompt.single_expert.describe_single_node_testing import describe_single_node_test
-from prompt.single_expert.most_representative_sample_selection import generate_representative_details
-from prompt.single_expert.head_recent_sample_selection import generate_train_node_detail, load_graph, load_json
+from prompt.sample_select.representative_sample_selection import generate_representative_details
+from prompt.sample_select.head_recent_sample_selection import generate_train_node_detail, load_graph, load_json
+from prompt.sample_select.purest_sample_selection import generate_purest_detail
 from openai import OpenAI, APIConnectionError, RateLimitError, BadRequestError
 
-from prompt.single_expert.purest_sample_selection import generate_purest_detail
 
+API1 = ""
+API2 = ""
+API3 = ""
 
 API_ENDPOINT_ca = "https://api.openai-proxy.org/v1"
 API_ENDPOINT_openai = "https://api.openai.com/v1"
@@ -24,8 +27,8 @@ model_gpt4 = "gpt-4"
 model_gpt4mini = "gpt-4o-mini"
 model_gpt4_32k = "gpt-4-32k"
 
-api_list = [API7, API8, API9, API10, API11, API13]
-current_api_key = API7
+api_list = [API1, API2, API3]
+current_api_key = API1
 
 
 def change_api_key():

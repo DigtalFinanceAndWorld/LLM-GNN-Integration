@@ -1,4 +1,4 @@
-from describe_single_node_testing import describe_single_node_train
+from prompt.single_expert.describe_single_node_testing import describe_single_node_train
 
 
 def purest_rank(nodes, current_labels, nodemap_train):

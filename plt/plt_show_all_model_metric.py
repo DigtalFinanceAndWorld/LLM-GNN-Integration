@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 def main():
     # dataset_name = "MulDiGraph"
     dataset_name = "MulDiGraph"
-    total_partitions = 18
+    total_partitions = 15
     result_dir = f"/home/a/zmb_workspace/product/Phisher_detect/baselines/result/{dataset_name}/delay_5"
     # model_name_list = ["deepwalk", "node2vec", "GCN", "GAT", "GraphSAGE", "ZipZap",
     #                    "ensemble_GCN_llama_no_finetune_recent_1000", "ensemble_GCN_llama_no_finetune_represent_1000"]

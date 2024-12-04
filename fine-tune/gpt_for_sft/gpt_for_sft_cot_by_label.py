@@ -6,11 +6,14 @@ import os
 import pandas as pd
 import tiktoken
 
-from describe_single_node_testing_token_cot import describe_single_node_test
-from head_recent_sample_selection import load_graph, load_json
+from prompt.single_expert.add_history import add_history
+from prompt.single_expert.describe_single_node_testing_token_cot import *
 from openai import OpenAI, APIConnectionError, BadRequestError, RateLimitError
 
-from add_history import add_history
+
+API1 = ""
+API2 = ""
+API3 = ""
 
 API_ENDPOINT_ca = "https://api.openai-proxy.org/v1"
 API_ENDPOINT_openai = "https://api.openai.com/v1"
@@ -21,8 +24,8 @@ model_gpt4 = "gpt-4"
 model_gpt4mini = "gpt-4o-mini"
 model_gpt4_32k = "gpt-4-32k"
 
-api_list = [API1, API2, API3, API4, API5, API6, API7, API8, API9, API10, API11, API12, API13, API14]
-current_api_key = API7
+api_list = [API1, API2, API3]
+current_api_key = API1
 
 
 def change_api_key():

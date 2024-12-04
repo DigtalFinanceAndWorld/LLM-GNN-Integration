@@ -1,6 +1,6 @@
 import json
 import pickle
-from describe_single_node_testing import describe_single_node_train
+from prompt.single_expert.describe_single_node_testing import describe_single_node_train
 
 
 def load_graph(file_path):

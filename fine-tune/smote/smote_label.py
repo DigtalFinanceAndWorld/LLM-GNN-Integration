@@ -10,7 +10,7 @@ origin_path = '../../dataset/finetune/finetune_label_analysis_logits_4096'
 new_path = '../../dataset/finetune/finetune_label_analysis_logits_4096_smote'
 multiple=500
 
-for idx in range(1, 19):
+for idx in range(1, 16):
     # 读取JSON文件
     data = pd.read_json(f'{origin_path}/MulDiGraph_delay_5_{multiple}_{idx}.json')
 
